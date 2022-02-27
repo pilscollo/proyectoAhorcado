@@ -27,7 +27,7 @@ def palabraIncognito(cantLetras):
     i=0
     while i<cantLetras:
         palabra.append("_")
-        i=i+1
+        i = i + 1
 
     return palabra
 
@@ -55,7 +55,7 @@ def funcionGeneral(listaPalabra, listaLetras):
     listaInc= palabraIncognito(len(palabra))
     while vida>0 and  r == False:
         print("\nVida: " + str(vida))
-        print(listaInc)
+        imprimirLista(listaInc)
         letra= input("\nSELECCIONE UNA LETRA: ")
         flag= encontrarLetra(listaLetras,letra)
         if flag != -1:
